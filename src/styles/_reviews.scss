@@ -1,0 +1,100 @@
+.reviews {
+  margin-bottom: 4em;
+  .heading {
+    margin-bottom: 2em;
+  }
+
+  &-container {
+    max-width: 1113px;
+    margin: 0 auto;
+    .swiper-container {
+      width: 100%;
+      height: 360px;
+
+      .swiper-item {
+        position: relative;
+        width: 615px;
+        height: 245px;
+        background-color: $secondary-color;
+        border-radius: 50px;
+        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+
+        .inner {
+          padding: 2em;
+          display: flex;
+          justify-content: space-between;
+          align-items: end;
+          height: 100%;
+          > img {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+
+          .title {
+            font-family: PoppinsSemiBold;
+            font-size: 1.25em;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+          }
+
+          .text {
+            font-family: PoppinsRegular;
+            font-size: 1.5rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-align: center;
+          }
+        }
+
+        .block {
+          padding: 1em;
+          display: flex;
+          width: 100%;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 2em 0;
+        }
+      }
+
+      .swiper-pagination-fraction,
+      .swiper-pagination-custom,
+      .swiper-horizontal > .swiper-pagination-bullets,
+      .swiper-pagination-bullets.swiper-pagination-horizontal {
+        bottom: 0px;
+        left: -11px;
+      }
+
+      .swiper {
+        height: 350px;
+        padding-top: 46px;
+      }
+
+      .swiper-slide {
+        padding-top: 1.25em;
+        transition: all 0.3s ease;
+      }
+      .swiper-slide-active {
+        padding-top: 0;
+      }
+
+      .swiper-pagination-bullet {
+        width: 12px;
+        height: 12px;
+        background-color: $accent-color;
+        opacity: 100;
+        transition: width 0.3s ease;
+      }
+
+      .swiper-pagination-bullet-active {
+        background-color: #177ba5;
+        width: 34px;
+        border-radius: 40px;
+      }
+    }
+  }
+}

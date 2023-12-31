@@ -1,0 +1,109 @@
+.heading {
+  font-family: PoppinsSemiBold;
+  font-weight: 600;
+  color: $accent-color;
+  text-align: center;
+  &-lg {
+    font-size: 4em;
+  }
+  &-md {
+    font-size: 3em;
+  }
+  &-sm {
+    font-size: 1.125em;
+  }
+
+  &-m {
+    font-size: 2.375em;
+  }
+
+  &-logo {
+    text-transform: uppercase;
+    color: $secondary-color;
+  }
+}
+
+.typography {
+  font-family: PoppinsRegular;
+  font-weight: 400;
+
+  &-lg {
+    font-size: 1.125em;
+  }
+
+  &-md {
+    font-size: 1em;
+  }
+
+  &-sm {
+    font-size: 0.875em;
+  }
+}
+
+.container {
+  width: 100%;
+  height: inherit;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1120px;
+}
+
+.button {
+  padding: 8px 16px;
+  outline: none;
+  border: none;
+  border-radius: 40px;
+  font-family: PoppinsSemiBold;
+  font-weight: 500;
+  font-size: 0.875em;
+  background: $green-color;
+  color: $secondary-color;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  &:hover {
+    background-color: #316866;
+  }
+}
+
+.custom-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0 5px;
+  width: 100%;
+  max-width: 144px;
+  white-space: no-wrap;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+  font-size: 1.25em;
+  font-family: PoppinsSemiBold;
+  cursor: pointer;
+  padding: 5px 2px;
+}
+
+.slide {
+  width: 100%;
+  height: calc(100vh - 150px);
+  &-title {
+    width: 100%;
+    text-align: center;
+    color: $secondary-color;
+    font-size: 5em;
+    font-family: AbrilFatfaceRegular;
+    line-height: normal;
+    font-weight: 400;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @media (max-width: 912px) {
+      font-size: 4em;
+    }
+
+    @media (max-width: 12450px) { 
+      
+     }
+  }
+}

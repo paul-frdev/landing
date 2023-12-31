@@ -1,0 +1,29 @@
+body {
+  z-index: 999;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: $bg-color;
+}
+
+.button-up {
+  position: fixed;
+  bottom: 30px;
+  right: 35px;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  z-index: 9;
+
+  span {
+    svg {
+      width: 31px;
+      height: 31px;
+    }
+  }
+}
