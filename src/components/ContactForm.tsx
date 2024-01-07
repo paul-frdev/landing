@@ -11,15 +11,12 @@ export const ContactForm = () => {
   const {
     register,
     handleSubmit,
-    watch,
     formState: { errors },
   } = useForm<Inputs>()
   const onSubmit: SubmitHandler<Inputs> = (data) => console.log(data)
 
-  console.log(watch("email")) // watch input value by passing the name of it
   return (
     <form onSubmit={handleSubmit(onSubmit)} className='contact-form'>
-      {/* register your input into the hook by invoking the "register" function */}
       <input placeholder='Enter Your Email Address'
         className={errors.email && 'errors'}
         {...register("email", {

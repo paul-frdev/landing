@@ -28,6 +28,9 @@
     .heading {
       width: 100%;
       max-width: 721px;
+      @media (max-width: 785px) {
+       font-size: 2em;
+      }
     }
 
     .button {

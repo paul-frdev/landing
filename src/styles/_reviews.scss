@@ -1,7 +1,16 @@
 .reviews {
   margin-bottom: 4em;
+  padding: 0 1em;
+
+  @media (max-width: 785px) {
+   margin-bottom: 2.5em;
+  }
   .heading {
-    margin-bottom: 2em;
+    margin-bottom: 1.2em;
+    @media (max-width: 785px) {
+      margin-bottom: 1em;
+      font-size: 1.8em;
+    }
   }
 
   &-container {
@@ -11,6 +20,10 @@
       width: 100%;
       height: 360px;
 
+      .swiper-slide {
+        display: flex;
+        justify-content: center;
+      }
       .swiper-item {
         position: relative;
         width: 615px;
@@ -25,6 +38,10 @@
           justify-content: space-between;
           align-items: end;
           height: 100%;
+
+          @media (max-width: 549px) {
+            padding: 2em 1em;
+          }
           > img {
             position: absolute;
             top: 0;
@@ -38,6 +55,9 @@
             font-style: normal;
             font-weight: 500;
             line-height: normal;
+            @media (max-width: 549px) {
+              font-size: 1em;
+            }
           }
 
           .text {
@@ -47,6 +67,9 @@
             font-weight: 400;
             line-height: normal;
             text-align: center;
+            @media (max-width: 549px) {
+              font-size: 1.2em;
+            }
           }
         }
 
@@ -58,6 +81,9 @@
           justify-content: center;
           align-items: center;
           gap: 2em 0;
+          @media (max-width: 549px) {
+            gap: 1em 0;
+          }
         }
       }
 

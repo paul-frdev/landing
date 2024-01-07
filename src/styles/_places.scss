@@ -1,18 +1,32 @@
 .places {
   margin: 4em 0;
+  padding: 0 1em;
   &-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     gap: 0 2em;
+
+    @media (max-width: 785px) {
+      flex-direction: column;
+      gap: 2em 0;
+    }
   }
   &-desc {
     position: relative;
-    width: 61%;
+    width: 80%;
+
+    @media (max-width: 785px) {
+      width: 100%;
+    }
 
     .heading {
       margin-bottom: 1em;
+      @media (max-width: 785px) {
+        margin-bottom: 0.5em;
+        font-size: 2.5em;
+      }
     }
     .text {
       font-family: PoppinsRegular;
@@ -20,11 +34,17 @@
       font-size: 1.5em;
       font-weight: 400;
       line-height: 150%;
+      @media (max-width: 785px) {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+      }
     }
 
-    .custom-prev-arrow, .custom-next-arrow {
+    .custom-prev-arrow,
+    .custom-next-arrow {
       position: absolute;
-      bottom: -30px;
+      bottom: -70px;
       right: 52px;
       width: 50px;
       height: 50px;
@@ -34,40 +54,38 @@
       align-items: center;
       border-radius: 14px;
 
+      @media (max-width: 785px) {
+        display: none;
+      }
+
       > svg {
         width: 24px;
         height: 24px;
       }
-    } 
+    }
 
     .custom-next-arrow {
       right: 0;
     }
   }
-  &-carousel {
-    width: 40%;
-  }
 
-  .swiper-container {
+  .swiper {
     width: 100%;
-    // max-width: 670px;
-    overflow: auto;
+    height: 100%;
+
+    .swiper-wrapper {
+      margin: 0 auto;
+    }
   }
 
-  .swiper-list {
-    min-width: 100%;
+  .swiper-slide {
+    width: 217px !important;
     display: flex;
-    flex-direction: row;
-    list-style: none;
-    padding: 0;
-    margin: 0;
+    justify-content: center;
+    align-items: center;
   }
 
   .swiper-item {
-    position: relative;
-    width: 100%;
-    height: 353px;
-    max-width: 217px;
     > img {
       background-size: cover;
       background-repeat: no-repeat;
@@ -75,6 +93,7 @@
       width: 217px;
       height: 353px;
       border-radius: 50px;
+      object-fit: cover;
     }
 
     .text {

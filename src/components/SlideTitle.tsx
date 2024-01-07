@@ -10,7 +10,9 @@ export const SlideTitle = () => {
       {!isOpen ?
         <motion.p
           className='slide-title'
-        >Explore, Dream, Travel</motion.p>
+        >
+          Explore, Dream, Travel
+        </motion.p>
         :
         null}
     </motion.div>

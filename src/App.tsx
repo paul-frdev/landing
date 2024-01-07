@@ -67,15 +67,15 @@ function App() {
         <Header />
         <SlideTitle />
         <Destination />
-      {/* <main>
-        <UpComing />
-        <Discover />
-        <Places />
-        <Guide />
-        <Reviews />
-        <Sales />
-      </main>
-      <Footer /> */}
+        <main>
+          <UpComing />
+          <Discover />
+          <Places />
+          <Guide />
+          <Reviews />
+          <Sales />
+        </main>
+        <Footer />
       </MyContextProvider>
       {showButton && (
         <ButtonUp onClick={scrollToTop} className='button-up' ref={buttonRef} />

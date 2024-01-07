@@ -8,12 +8,25 @@ import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 
 const swiperOptions = {
+  breakpoints: {
+    785: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+      slidesOffsetBefore: 0,
+    },
+    1200: {
+      slidesPerView: 3,
+      spaceBetween: 50,
+      slidesOffsetBefore: 50,
+    },
+  },
   spaceBetween: 32,
-  centeredSlides: true,
   grabCursor: true,
   loop: true,
   pagination: false,
+  slidesPerView: 3,
   navigation: {
+    clickable: true,
     prevEl: ".custom-prev-arrow",
     nextEl: ".custom-next-arrow",
   },
@@ -73,9 +86,7 @@ export const Places = () => {
             <CustomPrevArrow icon={<IoIosArrowBack />} onClick={() => { }} />
             <CustomNextArrow icon={<IoIosArrowForward />} onClick={() => { }} />
           </div>
-          <div className='swiper-container '>
-            <Swipper slidesPerView={3} items={swiperItems} options={swiperOptions} />
-          </div>
+          <Swipper items={swiperItems} options={swiperOptions} />
         </div>
       </Container>
     </section>

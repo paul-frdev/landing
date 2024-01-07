@@ -16,7 +16,11 @@ type SwipperProps = {
 export const Swipper: React.FC<SwipperProps> = ({ options, items, slidesPerView = 3 }) => {
 
   return (
-    <Swiper  modules={[Navigation, Pagination]} slidesPerView={slidesPerView} {...options}>
+    <Swiper
+      modules={[Navigation, Pagination]}
+      slidesPerView={slidesPerView}
+      {...options}
+    >
       {items.map((item, index) => (
         <SwiperSlide key={index}>{item}</SwiperSlide>
       ))}

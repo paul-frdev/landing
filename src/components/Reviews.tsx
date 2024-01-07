@@ -8,6 +8,23 @@ import { Container } from '../ui/Container';
 
 
 const swiperOptions = {
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      slidesOffsetBefore: 0,
+    },
+    785: {
+      slidesPerView: 1,
+      spaceBetween: 0,
+      slidesOffsetBefore: 0,
+    },
+    1100: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+      slidesOffsetBefore: 0,
+    },
+  },
   spaceBetween: 0,
   centeredSlides: true,
   grabCursor: true,
@@ -43,7 +60,7 @@ export const Reviews = () => {
       <Container>
         <Heading size='md' children='What customers say about us' />
         <div className="reviews-container">
-          <div className='swiper-container '>
+          <div className='swiper-container'>
             <Swipper items={swiperItems} options={swiperOptions} />
           </div>
         </div>

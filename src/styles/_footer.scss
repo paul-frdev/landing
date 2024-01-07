@@ -5,6 +5,21 @@
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+
+    @media (max-width: 840px) {
+      display: grid;
+      width: 90%;
+      margin: 0 auto;
+      gap: 2em 0;
+      justify-items: center;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      grid-template-rows: repeat(2, minmax(0, 1fr));
+    }
+
+    @media (max-width: 561px) {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+      grid-template-rows: repeat(4, minmax(0, 1fr));
+    }
   }
 
   .heading {
@@ -19,11 +34,17 @@
   .block-two,
   .block-three,
   .block-four {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: start;
     text-align: left;
+
+    @media (max-width: 561px) {
+      margin: 0 auto;
+      max-width: 250px;
+    }
   }
 
   .text,
@@ -79,6 +100,10 @@
       max-width: 270px;
       margin-bottom: 0.625em;
       text-transform: capitalize;
+    }
+
+    @media (max-width: 840px) {
+      margin-right: auto;
     }
   }
   &-bottom {
