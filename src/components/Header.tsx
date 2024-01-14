@@ -10,10 +10,13 @@ import { MobileMenu } from './MobileMenu';
 
 export const Header = () => {
 
-  const [show, setShow] = useState(false)
+
+  const [show, setShow] = useState(false);
+
   const isTablet = useMediaQuery({
     query: '(max-width: 912px)'
   })
+
 
 
   useEffect(() => {
@@ -22,7 +25,8 @@ export const Header = () => {
     } else {
       setShow(false)
     }
-  }, [isTablet])
+  }, [isTablet]);
+
 
   useEffect(() => {
 
@@ -42,11 +46,12 @@ export const Header = () => {
     };
   }, []);
 
+
   return (
-    <header className='header'>
+    <header className="header">
       <Container>
         <span className='header-image' />
-        <div className='header-container'>
+        <div className="header-container">
           <a href="/">
             <Heading size='md' className='logo' >Travello</Heading>
           </a>
