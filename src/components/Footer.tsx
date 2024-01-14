@@ -70,12 +70,12 @@ export const Footer = () => {
           <div className='block-three'>
             <Heading children='Instagram' />
             <div className="block-three__grid">
-              <img src="/src/assets/1.jpg" alt="image" />
-              <img src="/src/assets/1.jpg" alt="image" />
-              <img src="/src/assets/1.jpg" alt="image" />
-              <img src="/src/assets/1.jpg" alt="image" />
-              <img src="/src/assets/1.jpg" alt="image" />
-              <img src="/src/assets/1.jpg" alt="image" />
+              <img src="/assets/1.jpg" alt="image" />
+              <img src="/assets/1.jpg" alt="image" />
+              <img src="/assets/1.jpg" alt="image" />
+              <img src="/assets/1.jpg" alt="image" />
+              <img src="/assets/1.jpg" alt="image" />
+              <img src="/assets/1.jpg" alt="image" />
             </div>
           </div>
           <div className='block-four'>

@@ -9,7 +9,7 @@ export const Guide = () => {
         <div className="guide-container">
           <Heading size='md' children='Read Before You Travel' />
           <div className="block-one">
-            <img src="/src/assets/guide1.jpg" alt="image" />
+            <img src="/assets/guide1.jpg" alt="image" />
             <div className='inner'>
               <p className='title' >NUSA PENIDA ISLAND GUIDE</p>
               <p className='text'>
@@ -36,7 +36,7 @@ export const Guide = () => {
               }
               > read more</Link>
             </div>
-            <img src="/src/assets/guide2.jpg" alt="image" />
+            <img src="/assets/guide2.jpg" alt="image" />
           </div>
         </div>
       </Container>

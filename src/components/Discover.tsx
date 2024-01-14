@@ -8,7 +8,7 @@ export const Discover = () => {
     <section className="discover" id='books'>
       <div className="discover-container">
         <div className='discover-book'>
-          <img src="/src/assets/svg/img.svg" alt="book" />
+          <img src="/assets/svg/img.svg" alt="book" />
         </div>
         <div className='discover-desc'>
           <Heading size='md' children='Discover the world with us' />
